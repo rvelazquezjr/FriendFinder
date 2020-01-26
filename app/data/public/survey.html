@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='/surveyJS'></script>
+    <title>FriendFinder App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron text-center bg-danger">
+            <h1 class='header text-white'>Slapstick Heaven</h1>
+        </div>
+        <div class="row text-center justify-content-center align-items-center">
+            <div class="text-center">
+                <h3>Pick your torture</h3>
+            </div>
+            <form>
+                <div class='btn btn-primary btn-lg m-4' id='beginBtn'>START</div>
+                <div class="input-group w-100 mt-4">
+                    <input type="text" id="nameInput" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon2">
+                </div>
+                <div class="form-group m2" id='userSurvey'>
+                </div>
+                <button type="submit" class="btn btn-primary m4" id='subBtn'>END</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id='friendModal'>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <h3 id="friendTitle" class="text-center"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
